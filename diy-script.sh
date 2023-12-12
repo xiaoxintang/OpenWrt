@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 修改默认IP
-# sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
-# sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
+sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # TTYD 自动登录
 # sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
@@ -37,7 +37,7 @@ svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-a
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
+# svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 
 # Themes
