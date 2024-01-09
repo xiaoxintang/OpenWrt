@@ -20,7 +20,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-22.04
+    runs-on: self-host
 
     steps:
     - name: Check Server Performance
